@@ -1,0 +1,19 @@
+/*---------------------------------------------
+
+Project:      Noah- Personal One Page Template
+Version:      1.0
+page   :      blog
+
+------------------------------------------------
+
+[ CSS Structure ]
+
+
+- blog content
+
+========================================================*/
+
+header{
+    background-image: url(../images/000.png);
+    background-size: cover;
+}
