@@ -816,13 +816,13 @@ header .header-content p {
         height: 0 !important;
         position: absolute;
         text-align: center;
-        left: 0;
-        right: 0;
-        top: 50px;
+        left: 20%;
+        right: -200%;
+        top: 70px;
         margin: 0 !important;
         padding-top: 0px;
         overflow: hidden;
-        background-color: white;
+        background-color: #3B2BC5;
         transition: .3s ease;
         display: flex;
         flex-direction: column
@@ -836,7 +836,7 @@ header .header-content p {
     .navbar svg {
         display: block !important;
         position: absolute;
-        right: 0;
+        right: -200%;
         z-index: 222
     }
 
@@ -856,4 +856,36 @@ header .header-content p {
     .site-footer .col-md-4 .insta {
         width: 100%
     }
+
+    .port-holder img {
+        transition: .3s ease;
+        width: 100%;
+        margin-bottom: 10px;
+        height: 150px;
+        overflow: hidden;
+        border-radius: 20px;
+    }
+    .rights p {
+        font-size: 11px;
+    }
+
+    header .header-content h2 {
+        margin-top: 150px;
+        font-size: 24px;
+    }
+
+    header .sticky-nav {
+        padding: 30px 20px 5px;
+    }
+    .navbar .sticky-nav .fa-bar{
+        color: #007bb6 o !important;
+    }
+    .img-filter{
+        flex-wrap: wrap;
+    }
+    .img-filter p {
+        padding: 5px 13px;
+        margin: 0;
+    }
+
 }
