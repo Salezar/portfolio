@@ -37,7 +37,7 @@ $(function () {
     });
     //open nav 
     $("nav svg").on('click', function () {
-        $('header nav ul').toggleClass('open')
+        $('.header-navbar nav > ul').toggleClass('open')
     });
     //to top button
     $('.to-top').on('click', function () {

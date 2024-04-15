@@ -12,7 +12,7 @@ Version:      1.0
 
 - header
     .1.navigation bar
-    .2.header headings
+    .2..header-navbar headings
 
 - About-us
 
@@ -97,29 +97,31 @@ section {
 }
 
 /*--------------------------------------------------
-[2.Header part]
+[2..header-navbar part]
 --------------------------------------------------*/
 
-header {
+.header-navbar {
     position: relative;
     z-index: 1;
     overflow: hidden;
     background-size: cover;
     background-image: url(../images/main-bg.png);
-    height: 100vh;
+    height: 90vh;
 }
 
 /*NAVIGATION BAR*/
 
-header .navbar {
+.header-navbar .navbar {
     border: 0;
     padding: 0 20px;
     display: flex;
     justify-content: space-between;
     position: fixed;
     z-index: 333 !important;
-
-    margin: 0;
+    top: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
 }
 
 .navbar:before,
@@ -135,14 +137,14 @@ header .navbar {
     margin: 10px !important
 }
 
-header .navbar-brand {
+.header-navbar .navbar-brand {
     margin: 0 !important;
     padding: 15px 0 !important;
     height: auto;
     z-index: 2
 }
 
-header .sticky-nav {
+.header-navbar .sticky-nav {
     background: white;
     color: #3B2BC5 !important;
     width: 100%;
@@ -150,11 +152,11 @@ header .sticky-nav {
     box-shadow: 0px 2px 5px rgba(0, 0, 0, .2)
 }
 
-header .sticky-nav a {
+.header-navbar .sticky-nav a {
     color: #3B2BC5 !important;
 }
 
-header .sticky-nav svg {
+.header-navbar .sticky-nav svg {
     color: #3B2BC5 !important;
 }
 
@@ -169,23 +171,23 @@ header .sticky-nav svg {
 
 
 
-header .navbar > ul li a:hover {
+.header-navbar .navbar > ul li a:hover {
     color: #3B2BC5 !important;
     background: #A2F8DE !important;
     cursor: pointer;
     border-radius: 2px
 }
 
-header .navbar > ul li a.slctd {
+.header-navbar .navbar > ul li a.slctd {
     color: #3B2BC5 !important;
     background: #A2F8DE !important;
     cursor: pointer;
     border-radius: 2px
 }
 
-/*header content*/
+/*.header-navbar content*/
 
-header .header-content {
+.header-navbar .header-content {
     margin-top: 250px;
     margin-left: 25px;
     margin-right: 25px;
@@ -193,43 +195,43 @@ header .header-content {
     height: 100vh !important;
 }
 
-header .header-content h3 {
+.header-navbar .header-content h3 {
     font-size: 18px
 }
 
-header .row .col-md-6 .bold {
+.header-navbar .row .col-md-6 .bold {
     font-weight: 600;
     font-size: 17px
 }
 
-header .row .col-md-6 {
+.header-navbar .row .col-md-6 {
     display: flex;
     align-items: center;
     justify-content: center;
 
 }
 
-header .dev-img {
+.header-navbar .dev-img {
     padding-top: 150px;
 }
 
-header .row img {
+.header-navbar .row img {
     box-shadow: 0px 5px 20px rgba(0, 0, 0, .6)
 }
 
-header .header-content h2 {
+.header-navbar .header-content h2 {
     margin-top: 50px;
     font-size: 40px;
     font-weight: 700;
     color: #3B2BC5
 }
 
-header .header-content h1 {
+.header-navbar .header-content h1 {
     font-size: calc(1em + 4vw);
     margin: 0;
 }
 
-header .header-content p {
+.header-navbar .header-content p {
     font-size: calc(1em + .1vw);
     font-weight: lighter
 }
@@ -754,7 +756,7 @@ header .header-content p {
     position: relative;
     top: 8px;
     left: 8px;
-    margin: 40x !important;
+    margin: 40px !important;
     width: 100%;
 }
 
@@ -804,7 +806,7 @@ header .header-content p {
 @media (max-width: 1000px) {}
 
 @media (max-width: 970px) {
-    header .header-content {
+    .header-navbar .header-content {
         margin-top: 0px;
         margin-left: 25px;
         margin-right: 25px;
@@ -812,31 +814,30 @@ header .header-content p {
         height: 100vh !important;
     }
 
-    header nav > ul {
-        height: 0 !important;
+    .header-navbar nav > ul {
+        max-height: 0 !important;
         position: absolute;
         text-align: center;
-        left: 20%;
-        right: -200%;
-        top: 70px;
+        left: 0;
+        right:0;
+        top: 50px;
         margin: 0 !important;
         padding-top: 0px;
         overflow: hidden;
         background-color: #3B2BC5;
         transition: .3s ease;
         display: flex;
-        flex-direction: column
+        flex-direction: column;
     }
 
-    header nav > ul.open {
-        height: 350px !important;
-        ;
+    .header-navbar nav > ul.open {
+        max-height: 350px !important;
     }
 
     .navbar svg {
         display: block !important;
         position: absolute;
-        right: -200%;
+        right: 0;
         z-index: 222
     }
 
@@ -869,16 +870,16 @@ header .header-content p {
         font-size: 11px;
     }
 
-    header .header-content h2 {
+    .header-navbar .header-content h2 {
         margin-top: 150px;
         font-size: 24px;
     }
 
-    header .sticky-nav {
+    .header-navbar .sticky-nav {
         padding: 30px 20px 5px;
     }
     .navbar .sticky-nav .fa-bar{
-        color: #007bb6 o !important;
+        color: #007bb6 !important;
     }
     .img-filter{
         flex-wrap: wrap;
