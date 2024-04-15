@@ -21,9 +21,9 @@ $(function () {
 
         }
         if ($(this).scrollTop() >= 150) {
-            $('header .navbar').addClass("sticky-nav");
+            $('.header-navbar .navbar').addClass("sticky-nav");
         } else {
-            $('header .navbar').removeClass("sticky-nav");
+            $('.header-navbar .navbar').removeClass("sticky-nav");
 
         }
     });

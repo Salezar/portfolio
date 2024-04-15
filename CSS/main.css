@@ -820,7 +820,7 @@ section {
         text-align: center;
         left: 0;
         right:0;
-        top: 50px;
+        top: 60px;
         margin: 0 !important;
         padding-top: 0px;
         overflow: hidden;
@@ -876,10 +876,13 @@ section {
     }
 
     .header-navbar .sticky-nav {
-        padding: 30px 20px 5px;
+        padding: 10px 20px 5px;
     }
     .navbar .sticky-nav .fa-bar{
         color: #007bb6 !important;
+    }
+    .header-navbar .sticky-nav li a {
+        color: #FFF !important;
     }
     .img-filter{
         flex-wrap: wrap;
