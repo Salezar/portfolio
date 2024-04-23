@@ -892,4 +892,18 @@ section {
         margin: 0;
     }
 
+    .site-footer .col-md-4 .ins-img img{
+        margin: 0 !important;
+    }
+
+    .client .fa-quote-left:last-of-type{
+        right: 60px;
+    }
+
+    .port-holder img:nth-child(2){
+        padding: 0;
+    }
+    .owl-item.cloned {
+        width: 165.797px !important;
+    }
 }
